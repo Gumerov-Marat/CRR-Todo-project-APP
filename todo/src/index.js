@@ -1,5 +1,22 @@
-// import React from 'react';
-// import ReactDOM from 'react-dom';
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const  el = <h1>Hello World</h1>;
+
+const el2 = (
+  <div>
+    <h1>My Todo List</h1>
+    <input placeholder="search"/>
+    <ul>
+      <li>Learn React</li>
+      <li>Build Awesome App</li>
+    </ul>
+  </div>
+);
+
+ReactDOM.render(el2, document.getElementById('root'));
+
+
 // import './index.css';
 // import App from './App';
 // import * as serviceWorker from './serviceWorker';
@@ -15,4 +32,3 @@
 // // unregister() to register() below. Note this comes with some pitfalls.
 // // Learn more about service workers: https://bit.ly/CRA-PWA
 // serviceWorker.unregister();
-console.log(1);
