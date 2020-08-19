@@ -3,16 +3,16 @@ import TodolistItem from './todo-list-item';
 
 const  TodoList = ({todos}) => {
 
-  const elements = todos.map( (item) => {
+  const elements = todos.map((item) => {
+
+    const { id, ...itemProps } = item;
+
     return (
-      <li >
-        <TodolistItem
-          label={item.label}
-          important={item.important} />
+      <li key="{id}">
+        <TodolistItem {...itemProps} />
       </li>
     );
-      {
-        /* <TodolistItem {...item} /> будет сокращением через Spread */ }
+      {  /* <TodolistItem {...item} /> будет сокращением через Spread */ }
   });
 
   return (
