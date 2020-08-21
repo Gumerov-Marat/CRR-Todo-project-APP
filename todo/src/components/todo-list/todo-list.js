@@ -2,7 +2,7 @@ import React from 'react';
 import TodolistItem from '../todo-list-item';
 import './todo-list.css';
 
-const  TodoList = ({todos}) => {
+const  TodoList = ({todos, onDeleted }) => {
 
   const elements = todos.map((item) => {
 
@@ -10,7 +10,8 @@ const  TodoList = ({todos}) => {
 
     return (
       <li key={id} className="list-group-item">
-        <TodolistItem {...itemProps} />
+        <TodolistItem {...itemProps}
+        onDeleted={()=> onDeleted(id)} />
       </li>
     );
       {  /* <TodolistItem {...item} /> будет сокращением через Spread */ }
