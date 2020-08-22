@@ -42,10 +42,6 @@ export default class TodolistItem extends Component {
       classNames += ' important';
     }
 
-    const style = {
-      color: important ? 'steelblue' : 'black',
-      fontWeight: important ? 'bold' : 'normal'
-    };
     return (
       <span className={classNames}>
         <span

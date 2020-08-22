@@ -14,7 +14,6 @@ const  TodoList = ({todos, onDeleted }) => {
         onDeleted={()=> onDeleted(id)} />
       </li>
     );
-      {  /* <TodolistItem {...item} /> будет сокращением через Spread */ }
   });
 
   return (
